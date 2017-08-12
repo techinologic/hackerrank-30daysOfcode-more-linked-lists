@@ -20,6 +20,7 @@ class Solution {
             return head;
         }
         if (head.data != head.next.data) {
+            head = head.next;
             //head.next = head.next.next;
             removeDuplicates(head);
         } else {
