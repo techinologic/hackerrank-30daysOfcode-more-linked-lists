@@ -14,7 +14,6 @@ class Node {
 class Solution {
 
     public static Node removeDuplicates(Node head) {
-        //Write your code here
 
         if (head.next == null) {
             return head;
@@ -25,14 +24,7 @@ class Solution {
             head.next = head.next.next;
             removeDuplicates(head);
         }
-
-        //if head.data != head.next.data move to next node
-
-        //System.out.println(head.data);
-        //System.out.println(head.next.data);
-
         return head;
-
     }
 
     public static Node insert(Node head, int data) {
